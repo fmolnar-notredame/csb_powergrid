@@ -2,13 +2,9 @@
 % This was actually made much later, because we never needed the
 % network structure of the 10-gen system before.
 
-mpc = load_system('test_system_10gen', 0);
-ps2 = mpc2ps(mpc);
-save('10gen.mat', 'ps2');
-
 % plot lmax vs stress level
-stress = [0.0 : 0.1 : 1.5];
-plot_stressed_stability_ps(ps2,stress);
+stress = [0.0 : 0.1 : 2.1];
+plot_stressed_stability('test_system_10gen', 0, stress);
 
 % create P matrices for each stress level
-make_stressed_systems_ps('10gen',stress,'stress');
+make_stressed_systems('test_system_10gen', 0, stress, 'stress');
