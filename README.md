@@ -27,7 +27,7 @@ real-world systems, our findings have wide implications for many other networks
 whose functions depend on their dynamical homogeneity.
 
 # Contents of the repository
-- Networks: copies of the power-grid network datasets and codes for preprocessing
+- Preprocess: copies of the power-grid network datasets and codes for preprocessing
 - CSB: codes and results of analyzing converse symmetry breaking in these networks
 
 Please see the README.md file in each subfolder for further details.
