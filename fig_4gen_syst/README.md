@@ -7,7 +7,7 @@ Prerequisites
 - Matpower installed and available in Matlab path
 - Matlab optimization toolbox installed
 
-# Howto
+# How to
 
 For all the scripts below, it is assumed that they run from `<your_path>/csb_powergrid/fig_4gen_syst` as the current folder.
 This repo includes the output of these scripts as .zip files (to avoid overwriting when the scripts are run).
