@@ -1,4 +1,4 @@
-# Code to reproduce Fig. 5
+# Matlab code for reproducing Fig. 5 (CSB in 4-generator example system)
 
 Prerequisites
 - able to run Matlab scripts from a given folder
