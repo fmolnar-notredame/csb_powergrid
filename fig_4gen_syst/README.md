@@ -4,8 +4,8 @@ This folder contatins Matlab code that produces a version of Fig. 5 in the paper
 
 Prerequisites
 - able to run Matlab scripts from a given folder
-- Matpower installed and available in Matlab path
 - Matlab optimization toolbox installed
+- Matpower (https://matpower.org/) installed and available in Matlab path
 
 # How to
 
