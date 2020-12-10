@@ -29,5 +29,6 @@ whose functions depend on their dynamical homogeneity.
 # Contents of the repository
 - Preprocess: copies of the power-grid network datasets and codes for preprocessing
 - CSB: codes and results of analyzing converse symmetry breaking in these networks
+- fig_4gen_syst: Matlab code that produces a figure demostrating CSB for the 4-generator example system (Fig. 5)
 
 Please see the README.md file in each subfolder for further details.
