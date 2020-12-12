@@ -3,7 +3,7 @@
 
 This repoitory contains codes and data described in this paper:
 ```
-Converse symmetry breaking in power-grid networks,
+Asymmetry underlies stability in power grids,
 Ferenc Molnar, Takashi Nishikawa, Adilson E. Motter,
 Nat. Commun. Xxx (2020)
 DOI:
