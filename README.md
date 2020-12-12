@@ -31,6 +31,7 @@ homogeneity.
 - Preprocess: copies of the power-grid network datasets and codes for preprocessing
 - CSB: codes and results of analyzing converse symmetry breaking in these networks
 - fig_4gen_syst: Matlab code that produces a figure demostrating CSB for the 4-generator example system
-- Fig3D: Mathematica code and data to generate Fig. 2 (stability landscape of the 3-generator system)
+- Fig3D: Mathematica code and data to generate the stability landscape of the 3-generator system (Fig. 2)
+- Maps: Data showing the optimal beta values for NPCC and Germany on the map (Fig. 3)
 
 Please see the README.md file in each subfolder for further details.
