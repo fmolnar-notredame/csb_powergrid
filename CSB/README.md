@@ -5,7 +5,7 @@ Prerequisites
 - able to run Python 3 scripts from the same folder
 - for the optional steps, able to run pdfLatex 
 
-# Howto
+# How to
 
 For all the scripts below, it is assumed that they run from `<your_path>/csb_powergrid/CSB` as the current folder.
 This repo includes the output of these scripts as .zip files. Re-running the scripts may take a few hours.
