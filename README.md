@@ -1,4 +1,4 @@
-# Converse symmetry breaking in power-grid networks
+# Asymmetry underlies stability in power grids
 ### Ferenc Molnar, Takashi Nishikawa, and Adilson E. Motter
 
 This repoitory contains codes and data described in this paper:
@@ -13,18 +13,19 @@ DOI:
 Analysis shows that grid heterogeneity can enhance the stability of required homogeneous synchronous states.
 
 ### Abstract
-Behavioral homogeneity is often critical in a system of interacting entities, such
-as a power-grid network, whose stable operation requires all generators to
-have homogeneous frequencies. Previous work suggests that the stability of
-such dynamical homogeneity can be improved by making the parameters of
-the interacting entities homogeneous. Here, we use power grids as representative
-examples to show that a substantial additional improvement is possible by
-instead making the parameters suitably heterogeneous. We develop a general
-method to validate a major contribution to this effect from converse symmetry
-breaking, in which the system must be asymmetric to maintain a stable
-symmetric state. As the first demonstration of converse symmetry breaking in
-real-world systems, our findings have wide implications for many other networks
-whose functions depend on their dynamical homogeneity.
+Behavioral homogeneity is often critical for the functioning of network systems
+of interacting entities. In power grids, whose stable operation requires
+generator frequencies to be synchronized across the network, previous work
+suggests that the stability of homogeneous synchronous states can be improved
+by making the generators homogeneous. Here, we show that a substantial additional
+improvement is possible by instead making the generators suitably
+heterogeneous. We develop a general method for attributing this counterintuitive
+effect to converse symmetry breaking, a recently established phenomenon
+in which the system must be asymmetric to maintain a stable symmetric state.
+These findings constitute the first demonstration of converse symmetry breaking
+in real-world systems, and our method promises to enable identification of
+this phenomenon in other networks whose functions depend on their behavioral
+homogeneity.
 
 # Contents of the repository
 - Preprocess: copies of the power-grid network datasets and codes for preprocessing
