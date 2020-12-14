@@ -34,5 +34,6 @@ homogeneity.
 - Maps: Data showing the optimal beta values for NPCC and Germany on the map (Fig. 3)
 - fig_4gen_syst: Matlab code that produces a figure demostrating CSB for the 4-generator example system (Fig. 5)
 - CSB: codes and results of analyzing converse symmetry breaking in these networks (Fig. 6)
+- explore_cusps: interactive Matlab GUI for exploring cusp hypersurfaces (Supplementary Fig. 2)
 
 Please see the README.md file in each subfolder for further details.
