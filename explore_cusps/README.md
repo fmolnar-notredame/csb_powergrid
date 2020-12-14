@@ -1,5 +1,7 @@
 # Exploring cusp hypersurfaces
 
+This is an interactive Matlab GUI function that allows you to explore (the 2D cross section of) various cusp hypersurfaces in the beta-parameter space of a given system.
+
 Prerequisites
 - able to run Matlab scripts from a given folder
 
