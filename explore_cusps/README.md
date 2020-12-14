@@ -20,4 +20,4 @@ where i is the index specifying the system:
 
 It will open a GUI showing a heat map and level curves of lambda^{max} on the plane M, as in Supplementary Fig. 2 of the paper. By simply moving the cursor, you will be able to see how lambda^{max} and the full eigenvalue spectrum of the Jacobian J changes as a function of the position on M.
 
-(explore_cusps_screenshot.png)
+![alt text](explore_cusps_screenshot.png)
