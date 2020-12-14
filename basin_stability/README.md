@@ -7,8 +7,8 @@ Specifically, the contents of Fig. 4c are provided here.
 
 For each power-grid network we have
 - `dynamics.mat`: The dynamical parameters for the Swing equation
-- `data_beta_tilde.mat`: Basin results when using beta==beta_tilde (uniform optimum)
-- `data_beta_sa.mat`: Basin results when using beta==beta_sa (global heterogeneous optimum)
+- `data_beta_tilde.mat`: Basin results when using `beta==beta_tilde` (uniform optimum)
+- `data_beta_sa.mat`: Basin results when using `beta==beta_sa` (global heterogeneous optimum)
 
 ## Simulations
 
@@ -16,18 +16,18 @@ In each run the Swing equation is integrated over time. Specifically, the right-
 ```
 for (i = 0; i < n; i++)
 {
-	dxdt[i] = y[i];
-	dydt[i] = -beta[i] * y[i] + omega / (2.0 * H[i]) * Pg[i];
-	for (int k = 0; k < n; k++)
-	{
-		dydt[i] -= omega / (2.0 * H[i]) * E[i] * E[k] * Ymag[i,k] * sin(x[i] - x[k] - Yang[i,k] + PI / 2.0);
-	}
+  dxdt[i] = y[i];
+  dydt[i] = -beta[i] * y[i] + omega / (2.0 * H[i]) * Pg[i];
+  for (int k = 0; k < n; k++)
+  {
+    dydt[i] -= omega / (2.0 * H[i]) * E[i] * E[k] * Ymag[i,k] * sin(x[i] - x[k] - Yang[i,k] + PI / 2.0);
+  }
 }
 ```
 where the variables are the following, with the index indicating the generator:
 - `x[i]`: rotor angle
 - `y[i]`: rotor angular velocity
-- `beta[i]`: damping coefficient
+- `beta[i]`: combined damping coefficient
 - `H[i]`: inertia coefficient
 - `Pg[i]`: power generated
 - `E[i]`: internal voltage magnitude 
@@ -43,5 +43,5 @@ All values are per unit, angles are radians, and angular velocity is radians/sec
 
 The results are given in a single `1000x2` matrix, where each row is the result of a run,
 and the columns are as follows:
-- column `1`: `0`: not synchronized, `1`: synchronized (according to the sync criteria)
-- columm `2`: time when synchronization was achieved (according to the sync criteria)
+- column 1: `0` if not synchronized, `1` if synchronized (according to the sync criteria)
+- column 2: time when synchronization was achieved (according to the sync criteria)
