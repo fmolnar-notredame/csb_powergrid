@@ -1,4 +1,4 @@
-# Preprocessing the raw power grid networks
+# Preprocessing of power-grid network datasets
 
 Prerequisites
 - MatPower version 5.1  (not the latest!)
@@ -6,7 +6,8 @@ Prerequisites
 
 # Description
 
-The raw power grid data files are the following.
+The raw data files are the following:
+- test_system_3gen.m ("3gen")
 - test_system_10gen.m ("10gen")
 - data48em.m ("48gen")
 - GBreduced.m ("UK")
