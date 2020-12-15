@@ -22,7 +22,6 @@ for s = 1 to samples
 end
 mean_lmax /= samples
 ```
-where the variables are the following:
 - `points_per_direction`: number of samples to take along a given direction
 - `samples`: number of random directions to evaluate in n-dimensional beta space
 - `random_direction(n)`: a random unit vector uniformly distributed over all possible directions in the `n`-dimensional space; see https://mathworld.wolfram.com/HyperspherePointPicking.html
