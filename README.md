@@ -9,8 +9,8 @@ This repository contains data and code for reproducing the results described in 
 **Abstract:**
 Behavioral homogeneity is often critical for the functioning of network systems
 of interacting entities. In power grids, whose stable operation requires
-generator frequencies to be synchronized across the network, previous work
-suggests that the stability of homogeneous synchronous states can be improved
+generator frequencies to be synchronized—and thus homogeneous—across the network, previous work
+suggests that the stability of synchronous states can be improved
 by making the generators homogeneous. Here, we show that a substantial additional
 improvement is possible by instead making the generators suitably
 heterogeneous. We develop a general method for attributing this counterintuitive
