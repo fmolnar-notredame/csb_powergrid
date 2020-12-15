@@ -2,10 +2,10 @@
 
 This is an interactive Matlab GUI function that allows you to explore (the 2D cross section of) various cusp hypersurfaces in the beta-parameter space of a given system.
 
-Prerequisites
+### Prerequisites
 - able to run Matlab scripts from a given folder
 
-# How to
+### Description
 
 With `<your_path>/csb_powergrid/explore_cusps` as the current folder, run explore_cusps.m with one argument:
 
