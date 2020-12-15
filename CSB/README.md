@@ -13,7 +13,7 @@ This repository includes the output of these scripts as .zip files. Re-running t
 1) Run `RunAll2nodeClusters.m` to generate matrix P for all possible two-node clusters.
 	OUT: `similarity_*.csv`, `EQ_*/P_%d_%d.dat`
 
-2) Run `make_similarity_graphs.py` to visualize the input strength patterns for a selection of two-node clusters (chosen according to various measures of similarity)
+2) Run `make_similarity_graphs.py` to visualize the input strength patterns for a selection of two-node clusters (chosen according to various measures of similarity).
 	OUT: `cluster_choice_*.dat` files, `Results_*` folders containing similarity graphs (`graph_*_sim_%d_[%d,%d].png`)
 
 3) Run `RunSelected2nodeClusters.m` to compute the 2D stability landscape as a function of the betas of the symmetrized generators
