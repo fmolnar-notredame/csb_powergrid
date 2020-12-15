@@ -1,10 +1,10 @@
 # Preprocessing of power-grid network datasets
 
-## Prerequisites
+### Prerequisites
 - MatPower version 5.1  (not the latest!)
 - able to run Matlab scripts from a given folder
 
-## Description
+### Description
 
 The raw data files for the power-grid networks we study are the following:
 - 3-generator test system (3-gen): `test_system_3gen.m`
