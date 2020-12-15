@@ -6,12 +6,14 @@ Prerequisites
 
 # Description
 
-The raw data files are the following:
-- test_system_3gen.m ("3gen")
-- test_system_10gen.m ("10gen")
-- data48em.m ("48gen")
-- GBreduced.m ("UK")
-- ENTSO_E_2009_WINTER.mat ("Germany")
+The raw data files for the power-grid networks we study are the following:
+- 3-generator test system (3-gen): `test_system_3gen.m`
+- New England test system (10-gen): `test_system_10gen.m`
+- NPCC power grid (48-gen): `data48em.m`
+- U.K. power grid (66-gen): `GBreduced.m`
+- German power grid (69-gen): `ENTSO_E_2009_WINTER.mat`
+
+Note: The data file for the 4-generator example system in Fig. 5 can be found in the folder "fig_4gen_syst".
 
 For each system, there is an "Extract_*.m" script that executes the preprocessing of the given network.
 These include the following steps:
