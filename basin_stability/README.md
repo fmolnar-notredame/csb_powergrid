@@ -1,18 +1,18 @@
-# Basin stability data
+# Calculation of attraction basin
 
 This folder contains the results of computing basin stability for each system in the paper.
 Specifically, the contents of Fig. 4c are provided here.
 
-## Contents
+## Data
 
 For each power-grid network we have
 - `dynamics.mat`: The dynamical parameters for the Swing equation
 - `data_beta_tilde.mat`: Basin results when using `beta==beta_tilde` (uniform optimum)
 - `data_beta_sa.mat`: Basin results when using `beta==beta_sa` (global heterogeneous optimum)
 
-## Simulations
+## Code
 
-In each run the swing equation is integrated over time. The algorithm is detailed below.
+The core of the code is shown below. In each run, the swing equation is integrated over time with the function `integrate()` (which calls `rhs(x, y, t)` to compute the right hand side of the equation), while checking if synchronization is achieved with `check_sync(x, y)`. `integrate()` uses `rk45_step(rhs, x, y, t)`, a 4th-order Runge-Kutta integrator with adaptive time stepping.
 
 ```
 //right-hand side of the swing equation
@@ -96,7 +96,6 @@ where the variables are the following, with the index indicating the generator:
 
 
 All values are per unit, angles are radians, angular velocity is radians/second, and time is seconds.
-The time integration was computed using a 4-th order Runge-Kutta integrator with adaptive time stepping ("rk45").
 
 ## Results
 
