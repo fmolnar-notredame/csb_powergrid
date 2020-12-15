@@ -1,4 +1,4 @@
-# Data and code for *Asymmetry underlies stability in power grids*
+# Data and code for "Asymmetry underlies stability in power grids"
 
 This repository contains data and code for reproducing the results described in our upcoming article.
 
