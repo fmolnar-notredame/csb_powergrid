@@ -1,6 +1,6 @@
 # Demostrating CSB for 4-generator example system
 
-This folder contatins Matlab code that produces a version of Fig. 5 in the paper.
+This folder contatins Matlab code that produces a version of Fig. 5 in the paper.  The raw data file for the 4-generator system is `make_demo.m`.
 
 ### Prerequisites
 - able to run Matlab scripts from a given folder
