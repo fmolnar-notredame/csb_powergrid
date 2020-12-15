@@ -18,7 +18,7 @@ Note: The data file for the 4-generator example system in Fig. 5 can be found in
 For each system, there is a script `Extract_*.m`, which processes the raw data file and computes the stability for a range of stress level.  For each stress level, it executes the following:
 - calculates the Effective Network (EN) model
 - linearizes the dynamics around the synchronous state
-- exports the resulting P matrix and the original beta values (`%s/level%04d_P.txt` and `%s/level%04d_b.txt`, respectively)
+- exports the resulting P matrix and the original beta values in the subfolder with the corresponding system name (as `%s/level%04d_P.txt` and `%s/level%04d_b.txt`, respectively)
 
 For the NPCC, U.K., and German grids, it also does the following:
 - fills out missing (complex) impedances and generator dynamic parameters
@@ -35,8 +35,3 @@ The processed networks are saved in the following files:
 Note that these are the original files that our preprocessing has generated.
 Saving these files has been commented out from the scripts above to prevent overwriting the samples.
 This folder also includes `10gen.mat`, which contains the network state of the New England system in the "ps2" format.
-
-The P matrices (linearized dynamics) are computed for a number of "stress levels", which are
-different power-flow states where the original power generated and consumed (both real and reactive) have been
-multiplied by the stress level. Therefore the unmodified system is found at the stress level of 1.0.
-These files are saved in subfolders with the corresponding system name.
