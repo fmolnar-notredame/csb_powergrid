@@ -38,9 +38,9 @@ where the variables are the following:
 
 ## Results
 
-The results are given in a single `1000x5` matrix, where the columns are as follows:
+The results are given in a single `points_per_direction x 5` matrix, where the columns are as follows:
 - column `1`: distance (see `epsilon * (d-1)` from above)
-- columm `2`: worst lmax around the uniform optimum (i.e., `max_lmax` when `reference==beta_tilde`)
+- column `2`: worst lmax around the uniform optimum (i.e., `max_lmax` when `reference==beta_tilde`)
 - column `3`: mean lmax around the uniform optimum (i.e., `mean_lmax` when `reference==beta_tilde`)
-- columm `4`: worst lmax around the global optimum (i.e., `max_lmax` when `reference==beta_sa`)
+- column `4`: worst lmax around the global optimum (i.e., `max_lmax` when `reference==beta_sa`)
 - column `5`: mean lmax around the global optimum (i.e., `mean_lmax` when `reference==beta_sa`)
