@@ -1,6 +1,6 @@
 # Mass-spring system example
 
-### Prerequisites
+### Prerequisite
 - able to run Matlab scripts from a given folder
 
 ### Description
