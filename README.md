@@ -35,4 +35,4 @@ Folders:
 - **CSB:** Code and results of analyzing converse symmetry breaking for the New England, NPCC, UK, and German systems (Fig. 6)
 - **explore_cusps:** Interactive Matlab GUI tool for exploring cusp hypersurfaces (Supplementary Fig. 2)
 
-Please see the README.md file in each subfolder for further details.
+Please see the README.md file in each folder for further details.
