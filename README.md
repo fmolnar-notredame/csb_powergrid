@@ -1,4 +1,4 @@
-# Data and code for "Asymmetry underlies stability in power grids"
+# Supporting data and code for "Asymmetry underlies stability in power grids"
 
 This repository contains data and code for reproducing the results described in our upcoming article.
 
@@ -22,12 +22,14 @@ this phenomenon in other networks whose functions depend on their behavioral
 homogeneity.
 
 ## Contents of the repository
-- Preprocess: copies of the power-grid network datasets and codes for preprocessing
-- mass_spring: Matlab code that computes the solutions of the mass-spring system (Fig. 1)
+- CSB: codes and results of analyzing converse symmetry breaking in these networks (Fig. 6)
 - Fig3D: Mathematica code and data to generate the stability landscape of the 3-generator system (Fig. 2)
 - Maps: Data showing the optimal beta values for NPCC and Germany on the map (Fig. 3)
-- fig_4gen_syst: Matlab code that produces a figure demostrating CSB for the 4-generator example system (Fig. 5)
-- CSB: codes and results of analyzing converse symmetry breaking in these networks (Fig. 6)
+- Preprocess: copies of the power-grid network datasets and codes for preprocessing
+- basin_stability: 
+- beta_optimization:
 - explore_cusps: interactive Matlab GUI for exploring cusp hypersurfaces (Supplementary Fig. 2)
+- fig_4gen_syst: Matlab code that produces a figure demostrating CSB for the 4-generator example system (Fig. 5)
+- mass_spring: Matlab code that computes the solutions of the mass-spring system (Fig. 1)
 
 Please see the README.md file in each subfolder for further details.
