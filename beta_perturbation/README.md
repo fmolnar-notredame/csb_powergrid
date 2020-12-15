@@ -3,16 +3,9 @@
 This folder contains the results of computing the robustness of stability as a function of perturbations in beta value, for each system in the paper.
 Specifically, the contents of Fig. 4b are provided here.
 
-## Contents
+### Code
 
-For each power-grid network we have
-- `data.mat`: The response of lmax values to perturbations in beta
-
-
-## Computation
-
-The results are computed using the following algorithm:
-
+The changes of stabililty (lmax) under perturbations of beta are computed using the following algorithm:
 ```
 mean_lmax = zeros(points_per_direction)
 max_lmax = -inf(points_per_direction)
@@ -32,13 +25,13 @@ mean_lmax /= samples
 where the variables are the following:
 - `points_per_direction`: number of samples to take along a given direction
 - `samples`: number of random directions to evaluate in n-dimensional beta space
-- `random_direction(n)`: a unit-length vector in a uniformly random direction in n-dimensional space, see https://mathworld.wolfram.com/HyperspherePointPicking.html
-- `reference`: beta value that is being perturbed
+- `random_direction(n)`: a random unit vector uniformly distributed over all possible directions in the `n`-dimensional space; see https://mathworld.wolfram.com/HyperspherePointPicking.html
+- `reference`: the original beta value to be perturbed
 - `epsilon`: step size along the chosen direction
 
-## Results
+### Data
 
-The results are given in a single `points_per_direction x 5` matrix, where the columns are as follows:
+In the folder corresponding to each power-grid network, the results of the computations are given in `data.mat`. The file contains a single matrix of size `points_per_direction x 5`, where the columns are as follows:
 - column `1`: distance (see `epsilon * (d-1)` from above)
 - column `2`: worst lmax around the uniform optimum (i.e., `max_lmax` when `reference==beta_tilde`)
 - column `3`: mean lmax around the uniform optimum (i.e., `mean_lmax` when `reference==beta_tilde`)
