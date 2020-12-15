@@ -22,7 +22,7 @@ in real-world systems, and our method promises to enable identification of
 this phenomenon in other networks whose functions depend on their behavioral
 homogeneity.
 
-# Contents of the repository
+## Contents of the repository
 - Preprocess: copies of the power-grid network datasets and codes for preprocessing
 - mass_spring: Matlab code that computes the solutions of the mass-spring system (Fig. 1)
 - Fig3D: Mathematica code and data to generate the stability landscape of the 3-generator system (Fig. 2)
