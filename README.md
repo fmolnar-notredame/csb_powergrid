@@ -2,17 +2,12 @@
 ### Ferenc Molnar, Takashi Nishikawa, and Adilson E. Motter
 
 This repoitory contains data and code for reproducing results described in the following article:
-```
-Asymmetry underlies stability in power grids,
-Ferenc Molnar, Takashi Nishikawa, Adilson E. Motter,
-Nat. Commun. Xxx (2020)
-DOI:
-```
 
-#### One-sentence summary of the article
-Analysis shows that grid heterogeneity can enhance the stability of required homogeneous synchronous states.
+**Title:** Asymmetry underlies stability in power grids
 
-#### Abstract
+**Authors:** Ferenc Molnar, Takashi Nishikawa, Adilson E. Motter
+
+**Abstract:**
 Behavioral homogeneity is often critical for the functioning of network systems
 of interacting entities. In power grids, whose stable operation requires
 generator frequencies to be synchronized across the network, previous work
