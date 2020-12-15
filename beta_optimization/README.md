@@ -2,7 +2,7 @@
 
 This folder contains the results of running simulated annealing to find a heterogeneous beta assignment that optimizes the stability (lmax). The best stability identified for each system is plotted in Fig. 4a of the paper.
 
-## Contents
+### Contents
 
 The folder for each power-grid network contains:
 - `Original/info.mat`: `P` matrix and original `beta` values, homogeneous optimum `beta_tilde`, and corresponding lmax values
@@ -12,7 +12,7 @@ one sample of simulated annealing run (see below). The first column is the best 
 - `Stress/level_%2.1f_samples.mat`: A matrix of 200 rows and `(n+1)` columns where `n` is the number of generators. Each row contains
 one sample of simulated annealing run at the indicated stress level. The first column is the best achieved lmax in that run, and the rest are the corresponding beta values.
 
-## Simulated Annealing
+### Optimization code
 The optimization is based on simulated annealing with the following procedure for each sample:
 ```
 old_beta = beta_tilde + 10 * dir()
