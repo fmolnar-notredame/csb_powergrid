@@ -5,7 +5,7 @@ Specifically, the contents of Fig. 4c are provided here.
 
 ## System parameters
 
-In the folder for each power-grid network, we have `dynamics.mat`, containing all parameters:
+In the subfolder for each power-grid network, we have `dynamics.mat`, containing all parameters:
 - `n`: number of generators
 - `H[i]`: inertia coefficient
 - `omega`: reference (angular) frequency
@@ -105,6 +105,7 @@ All values are per unit, angles are radians, angular velocity is radians/second,
 
 ## Results
 
+In the subfolder for each power-grid network, we have:
 - `data_beta_tilde.mat`: Basin results when using `beta==beta_tilde` (homogeneous optimum)
 - `data_beta_sa.mat`: Basin results when using `beta==beta_sa` (heterogeneous optimum)
 
