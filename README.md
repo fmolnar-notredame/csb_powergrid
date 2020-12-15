@@ -18,7 +18,7 @@ effect to converse symmetry breaking, a recently established phenomenon
 in which the system must be asymmetric to maintain a stable symmetric state.
 These findings constitute the first demonstration of converse symmetry breaking
 in real-world systems, and our method promises to enable identification of
-this phenomenon in other networks whose functions depend on their behavioral
+this phenomenon in other networks whose functions rely on behavioral
 homogeneity.
 
 ## Contents of the repository
