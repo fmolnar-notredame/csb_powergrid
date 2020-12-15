@@ -2,7 +2,7 @@
 
 This folder contains the results of running simulated annealing to find a heterogeneous beta assignment that optimizes the stability (lmax). The best stability identified for each system is plotted in Fig. 4a of the paper.
 
-### Contents
+### Data
 
 The folder for each power-grid network contains:
 - `Original/info.mat`: `P` matrix and original `beta` values, homogeneous optimum `beta_tilde`, and corresponding lmax values
