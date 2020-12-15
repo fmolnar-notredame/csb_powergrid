@@ -28,10 +28,10 @@ For the NPCC, U.K., and German grids, it also does the following:
 For the NPCC and German grids, it also exports the data needed to draw the network on a map.
 
 The processed networks are saved in the following files:
+- New England test system (10-gen): `10gen.mat`
 - NPCC power grid (48-gen): `data48em2.mat`
 - U.K. power grid (66-gen): `GBreduced6.mat`
 - German power grid (69-gen): `germany8.mat`
 
 Note that these are the original files that our preprocessing has generated.
 Saving these files has been commented out from the scripts above to prevent overwriting the samples.
-This folder also includes `10gen.mat`, which contains the network state of the New England system in the "ps2" format.
