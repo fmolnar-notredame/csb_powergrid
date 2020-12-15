@@ -19,7 +19,7 @@ ps2 = MakeDynamicsChao(ps2);
 % ps2.gen_dyn(:,1) = max([ps2.gen_dyn(:,1), 1e-4 * ones(size(P))], [], 2);
 
 % save | uncomment to overwrite existing sample
-% save('germany8', ps2);
+% save('germany8', 'ps2');
 
 %% load existing
 load('germany8'); % makes ps2
