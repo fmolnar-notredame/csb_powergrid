@@ -2,7 +2,7 @@
 
 This repository contains data and code for reproducing the results described in our upcoming article.
 
-**Title:** Asymmetry underlies stability in power grids
+**Article title:** Asymmetry underlies stability in power grids
 
 **Authors:** Ferenc Molnar, Takashi Nishikawa, Adilson E. Motter
 
