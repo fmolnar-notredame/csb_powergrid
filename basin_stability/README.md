@@ -12,7 +12,7 @@ For each power-grid network we have
 
 ## Code
 
-The core of the code is shown below. In each run, the swing equation is integrated over time with the function `integrate()` (which calls `rhs(x, y, t)` to compute the right hand side of the equation), while checking if synchronization is achieved with `check_sync(x, y)`. `integrate()` uses `rk45_step(rhs, x, y, t)`, a 4th-order Runge-Kutta integrator with adaptive time stepping.
+The code for the attraction basin calculation is shown below. In each run, the swing equation is integrated over time with the function `integrate()` (which calls `rhs(x, y, t)` to compute the right hand side of the equation), while checking if synchronization is achieved with `check_sync(x, y)`. `integrate()` uses `rk45_step(rhs, x, y, t)`, a 4th-order Runge-Kutta integrator with adaptive time stepping.
 
 ```
 //right-hand side of the swing equation
@@ -78,9 +78,9 @@ def integrate():
     return {false, 99.999}
 }
 ```
-where the variables are the following, with the index indicating the generator:
+With `i` indexing the generators, the variables are:
 - `x[i]`: rotor angle
-- `y[i]`: rotor angular velocity
+- `y[i]`: rotor angular velocity (frequency)
 - `t`: time
 - `beta[i]`: combined damping coefficient
 - `H[i]`: inertia coefficient
@@ -92,8 +92,7 @@ where the variables are the following, with the index indicating the generator:
 - `dxdt[i]`: the r.h.s. for the angle
 - `dydt[i]`: the r.h.s. for the velocity
 - `random()`: uniform random real value between 0 and 1
-- `tmax`: maximum integrated time
-
+- `tmax`: maximum integration time
 
 All values are per unit, angles are radians, angular velocity is radians/second, and time is seconds.
 
