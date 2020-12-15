@@ -49,8 +49,8 @@ def plot_similarity(fig, ax, data, idx, **kwargs):
     cy[cy>0] += 1
     
     # add similarity value
-    label = r'$s=%4.3f$' % data.similarity
-    ax.text(-2.1, q*0.6, label, fontsize=9)
+#    label = r'$s=%4.3f$' % data.similarity
+#    ax.text(-2.1, q*0.6, label, fontsize=9)
 
     # links a to center
     for i in range(q):
@@ -105,6 +105,8 @@ def plot_similarity(fig, ax, data, idx, **kwargs):
     
     if idx==3:
         sm = cm.ScalarMappable(cmap=cmap)
+
+        sm.set_array([])
         
         cbar = fig.colorbar(sm, cax=kwargs['cax'], format='%2.1f')
         cbar.set_label(r'$z$')

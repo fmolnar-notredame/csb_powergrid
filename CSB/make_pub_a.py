@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 from make_pub_tools import get_lmax, add_panel_label
 
 # tick marks on the top panels
-lmax_ticks = [[-2, -3, -4], [-2.1, -2.2, -2.3], [-5.0, -5.5, -6.0], [-3.1, -3.2, -3.3]]
+lmax_ticks = [[-3.5, -4.0, -4.5], [-2.0, -2.1, -2.2, -2.3], [-5.9, -6.0, -6.1, -6.2], [-2.8, -2.9, -3.0, -3.1]]
+lmaxlim = [[-4.7, -3.5], [-2.32, -2], [-6.23, -5.9], [-3.12, -2.73]]
 
 #%%
 def plot_over_landscape(fig, ax, data, idx, **kwargs):
@@ -51,7 +52,7 @@ def plot_over_landscape(fig, ax, data, idx, **kwargs):
     bmin_b = (bmin_a - x1) * (dy/dx) + y1 # vertical axis values must be on the line
     bmax_b = (bmax_a - x1) * (dy/dx) + y1
     
-    N = 100
+    N = 500
     bb_a = np.linspace(bmin_a, bmax_a, N)
     bb_b = np.linspace(bmin_b, bmax_b, N)
     lmax = np.zeros(N)
@@ -63,6 +64,7 @@ def plot_over_landscape(fig, ax, data, idx, **kwargs):
         
     ax.plot(bb_a, lmax, 'k-', linewidth=0.5)
     ax.set_xlim(bmin_a, bmax_a)
+    ax.set_ylim(lmaxlim[idx])
     
     step=1
     xticks = np.arange(np.ceil(bmin_a), np.floor(bmax_a)+1, step)
