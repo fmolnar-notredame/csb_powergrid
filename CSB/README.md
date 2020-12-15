@@ -10,10 +10,10 @@
 For all the scripts below, it is assumed that they are run with `<your_path>/csb_powergrid/CSB` as the current folder.
 This repository includes the output of these scripts as .zip files. Re-running the scripts may take a few hours.
 
-1) Run `RunAll2nodeClusters.m` to make the P matrices for all possible 2-node clusters
+1) Run `RunAll2nodeClusters.m` to generate matrix P for all possible two-node clusters.
 	OUT: `similarity_*.csv`, `EQ_*/P_%d_%d.dat`
 
-2) Run `make_similarity_graphs.py` to visualize similarity and select the top 20 clusters
+2) Run `make_similarity_graphs.py` to visualize the input strength patterns for a selection of two-node clusters (chosen according to various measures of similarity)
 	OUT: `cluster_choice_*.dat` files, `Results_*` folders containing similarity graphs (`graph_*_sim_%d_[%d,%d].png`)
 
 3) Run `RunSelected2nodeClusters.m` to compute the 2D stability landscape as a function of the betas of the symmetrized generators
@@ -29,7 +29,7 @@ This repository includes the output of these scripts as .zip files. Re-running t
 
 7) OPTIONAL: run `make_landscape_slides.py` to create a slideshow of all 2-node cluster similarities and landscapes.
 	NOTE: this requires (5) and (6) to run before this one.
-	OUT: `Landscape_choices.tex` -- compile this with pdflatex to create the actual slideshow as Landscape_choices.pdf
+	OUT: `Landscape_choices.tex` — compile this with pdflatex to create the actual slideshow as Landscape_choices.pdf
 	NOTE: if the tex file is empty, it means that the files from the previous steps were not found.
 
 8) Run `make_pub_figure.py` to make the prototype of Fig. 4 in the paper. This script uses the other `make_pub*.py` files to plot each section.
