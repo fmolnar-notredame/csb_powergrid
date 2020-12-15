@@ -86,20 +86,16 @@ def integrate():
 }
 ```
 With `i` indexing the generators, the variables are:
+- `t`: time
 - `x[i]`: rotor angle
 - `y[i]`: rotor angular velocity (frequency)
-- `t`: time
-- `beta[i]`: combined damping coefficient
-- `H[i]`: inertia coefficient
-- `Pg[i]`: power generated
-- `E[i]`: internal voltage magnitude 
-- `Ymag[i,k]`: magnitude of complex admittance between `i` and `k`
-- `Yang[i,k]`: angle of complex admittance between `i` and `k`
-- `delta_star[i]`: steady-state rotor angle
 - `dxdt[i]`: the r.h.s. for the angle
 - `dydt[i]`: the r.h.s. for the velocity
+Addtional parameters are:
+- `beta[i]`: combined damping coefficient (`beta==beta_tilde` or `beta==beta_sa`)
+- `tmax`: maximum integration time (we used `tmax = 10`)
+
 - `random()`: uniform random real value between 0 and 1
-- `tmax`: maximum integration time
 
 All values are per unit, angles are radians, angular velocity is radians/second, and time is seconds.
 
@@ -112,4 +108,4 @@ In the subfolder for each power-grid network, we have:
 In each file, the results are given as a single `1000x2` matrix, where each row is the result of a run,
 and the columns are as follows:
 - column 1: `0` if not synchronized, `1` if synchronized (according to the sync criteria)
-- column 2: time when synchronization was achieved (according to the sync criteria)
+- column 2: Time at which synchronization was achieved for the first time (according to the sync criteria)
