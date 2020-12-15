@@ -91,6 +91,7 @@ With `i` indexing the generators, the variables are:
 - `y[i]`: rotor angular velocity (frequency)
 - `dxdt[i]`: the r.h.s. for the angle
 - `dydt[i]`: the r.h.s. for the velocity
+
 Addtional parameters are:
 - `beta[i]`: combined damping coefficient (`beta==beta_tilde` or `beta==beta_sa`)
 - `tmax`: maximum integration time (we used `tmax = 10`)
