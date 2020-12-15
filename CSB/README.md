@@ -1,23 +1,23 @@
 # Converse symmetry breaking calculations
 
-Prerequisites
+### Prerequisites
 - able to run Matlab scripts from a given folder
 - able to run Python 3 scripts from the same folder
 - for the optional steps, able to run pdfLatex 
 
-# How to
+### How to
 
-For all the scripts below, it is assumed that they run from `<your_path>/csb_powergrid/CSB` as the current folder.
-This repo includes the output of these scripts as .zip files. Re-running the scripts may take a few hours.
+For all the scripts below, it is assumed that they are run with `<your_path>/csb_powergrid/CSB` as the current folder.
+This repository includes the output of these scripts as .zip files. Re-running the scripts may take a few hours.
 
-1) Run RunAll2nodeClusters.m  to make the P matrices for all possible 2-node clusters
-	OUT: similarity_*.csv, EQ_*/P_%d_%d.dat 
+1) Run `RunAll2nodeClusters.m` to make the P matrices for all possible 2-node clusters
+	OUT: `similarity_*.csv`, `EQ_*/P_%d_%d.dat`
 
-2) Run make_similarity_graphs.py to visualize similarity and select the top 20 clusters
-	OUT: cluster_choice_*.dat files, Results_* folders containing similarity graphs (graph_*_sim_%d_[%d,%d].png)
+2) Run `make_similarity_graphs.py` to visualize similarity and select the top 20 clusters
+	OUT: `cluster_choice_*.dat` files, `Results_*` folders containing similarity graphs (`graph_*_sim_%d_[%d,%d].png`)
 
 3) Run RunSelected2nodeClusters.m to compute the 2D stability landscape as a function of the betas of the symmetrized generators
-	OUT: Results*/landscape_*_%d_%d.dat  and  Results*/landscape_args_*_%d_%d.dat
+	OUT: `Results*/landscape_*_%d_%d.dat` and `Results*/landscape_args_*_%d_%d.dat`
 
 4) Run RunClusterZoominInterpolation.m to compute the precise stability values as the systems are interpolated between
 	original and exact-equitable.
