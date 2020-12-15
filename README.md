@@ -23,7 +23,7 @@ homogeneity.
 
 ## Contents of the repository
 
-Folders:
+The folders in this repository contain data and code for reproducing the results presented in the figures of the paper, as follows:
 - **Preprocess:** Copies of the power-grid network datasets and code for preprocessing
 - **mass_spring:** Matlab code for analyzing the example mass-spring system (Fig. 1)
 - **Fig3D:** Mathematica code and data to generate the stability landscape for the 3-generator system (Fig. 2)
