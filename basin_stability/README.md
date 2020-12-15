@@ -96,9 +96,7 @@ Addtional parameters are:
 - `beta[i]`: combined damping coefficient (`beta==beta_tilde` or `beta==beta_sa`)
 - `tmax`: maximum integration time (we used `tmax = 10`)
 
-- `random()`: uniform random real value between 0 and 1
-
-All values are per unit, angles are radians, angular velocity is radians/second, and time is seconds.
+`random()` is a uniform random number generator returning a real value between 0 and 1. All values are per unit, angles are radians, angular velocity is radians/second, and time is seconds.
 
 ## Results
 
