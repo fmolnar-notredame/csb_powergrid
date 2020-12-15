@@ -5,7 +5,7 @@ Specifically, the contents of Fig. 4a are provided here.
 
 ## Contents
 
-For each power-grid network we have
+The folder for each power-grid network contains:
 - `Original/info.mat`: `P` matrix and original `beta` values, uniform optimum `beta_tilde`, and corresponding lmax (stability) values
 - `Original/samples.mat`: A matrix of 200 rows and `(n+1)` columns where `n` is the number of generators. Each row contains
 one sample of simulated annealing run (see below). The first column is the best achieved lmax in that run, and the rest are the corresponding beta values.
