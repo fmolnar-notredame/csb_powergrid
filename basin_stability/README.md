@@ -17,6 +17,8 @@ In the subfolder for each power-grid network, we have `dynamics.mat`, containing
 - `beta_tilde[i]`: homogeneous optimal beta
 - `beta_sa[i]`: heterogeneous optimal beta identified by simulated annealing
 
+Angles are in radians, angular velocities are in radians/second, and all power system parameters are in per unit.
+
 ## Code
 
 The code for the attraction basin calculation is shown below. In each run, the swing equation is integrated over time with the function `integrate()` (which calls `rhs(x, y, t)` to compute the right hand side of the equation), while checking if synchronization is achieved with `check_sync(x, y)`. `integrate()` uses `rk45_step(rhs, x, y, t)`, a 4th-order Runge-Kutta integrator with adaptive time stepping.
@@ -90,13 +92,13 @@ With `i` indexing the generators, the variables are:
 - `x[i]`: rotor angle
 - `y[i]`: rotor angular velocity (frequency)
 - `dxdt[i]`: the r.h.s. for the angle
-- `dydt[i]`: the r.h.s. for the velocity
+- `dydt[i]`: the r.h.s. for the angular velocity
 
 Addtional parameters are:
 - `beta[i]`: combined damping coefficient (`beta==beta_tilde` or `beta==beta_sa`)
 - `tmax`: maximum integration time (we used `tmax = 10`)
 
-`random()` is a uniform random number generator returning a real value between 0 and 1. Angles are in radians, angular velocities are in radians/second, time is in seconds, and all power system variables/parameters are in per unit.
+`random()` is a random number generator returning a real value uniformly distributed between 0 and 1. The time is in seconds, the angles are in radians, and the angular velocities are in radians/second. 
 
 ## Results
 
