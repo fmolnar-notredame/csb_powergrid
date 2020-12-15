@@ -3,12 +3,19 @@
 This folder contains the results of computing basin stability for each system in the paper.
 Specifically, the contents of Fig. 4c are provided here.
 
-## Data
+## System parameters
 
-For each power-grid network we have
-- `dynamics.mat`: The dynamical parameters for the Swing equation
-- `data_beta_tilde.mat`: Basin results when using `beta==beta_tilde` (uniform optimum)
-- `data_beta_sa.mat`: Basin results when using `beta==beta_sa` (global heterogeneous optimum)
+In the folder for each power-grid network, we have `dynamics.mat`, containing all parameters:
+- `n`: number of generators
+- `H[i]`: inertia coefficient
+- `omega`: reference (angular) frequency
+- `Pg[i]`: power generated
+- `E[i]`: internal voltage magnitude 
+- `Ymag[i,k]`: magnitude of complex admittance between `i` and `k`
+- `Yang[i,k]`: angle of complex admittance between `i` and `k`
+- `delta_star[i]`: steady-state rotor angle
+- `beta_tilde[i]`: homogeneous optimal beta
+- `beta_sa[i]`: heterogeneous optimal beta identified by simulated annealing
 
 ## Code
 
@@ -98,7 +105,10 @@ All values are per unit, angles are radians, angular velocity is radians/second,
 
 ## Results
 
-The results are given in a single `1000x2` matrix, where each row is the result of a run,
+- `data_beta_tilde.mat`: Basin results when using `beta==beta_tilde` (homogeneous optimum)
+- `data_beta_sa.mat`: Basin results when using `beta==beta_sa` (heterogeneous optimum)
+
+In each file, the results are given as a single `1000x2` matrix, where each row is the result of a run,
 and the columns are as follows:
 - column 1: `0` if not synchronized, `1` if synchronized (according to the sync criteria)
 - column 2: time when synchronization was achieved (according to the sync criteria)
