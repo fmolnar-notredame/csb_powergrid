@@ -15,10 +15,11 @@ The raw data files for the power-grid networks we study are the following:
 
 Note: The data file for the 4-generator example system in Fig. 5 can be found in the folder "fig_4gen_syst".
 
-For each system, there is a script `Extract_*.m`, which processes the raw data file and computes the stability (before beta optimization) for a range of stress level.  For each stress level, it executes the following:
+For each system, there is a script `Extract_*.m`, which processes the raw data file and computes the stability for a range of stress level.  For each stress level, it executes the following:
 - calculates the Effective Network (EN) model
 - linearizes the dynamics around the synchronous state
 - exports the resulting P matrix and the original beta values in the subfolder with the corresponding system name (as `%s/level%04d_P.txt` and `%s/level%04d_b.txt`, respectively)
+- computes and plots the stability for the original beta and for the homogeneous optimal beta
 
 For the NPCC, U.K., and German grids, it also does the following:
 - fills out missing (complex) impedances and generator dynamic parameters
