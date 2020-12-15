@@ -25,14 +25,14 @@ mean_lmax /= samples
 - `points_per_direction`: number of samples to take along a given direction
 - `samples`: number of random directions to evaluate in n-dimensional beta space
 - `random_direction(n)`: a random unit vector uniformly distributed over all possible directions in the `n`-dimensional space; see https://mathworld.wolfram.com/HyperspherePointPicking.html
-- `reference`: the original beta value to be perturbed
+- `reference`: the original beta value to be perturbed (i.e., homogeneous or heterogeneous optimum)
 - `epsilon`: step size along the chosen direction
 
 ### Data
 
 In the folder corresponding to each power-grid network, the results of the computations are given in the file `data.mat`. The file contains a single matrix of size `points_per_direction x 5`, where the columns are as follows:
-- column `1`: distance (see `epsilon * (d-1)` from above)
-- column `2`: worst lmax around the uniform optimum (i.e., `max_lmax` when `reference==beta_tilde`)
-- column `3`: mean lmax around the uniform optimum (i.e., `mean_lmax` when `reference==beta_tilde`)
-- column `4`: worst lmax around the global optimum (i.e., `max_lmax` when `reference==beta_sa`)
-- column `5`: mean lmax around the global optimum (i.e., `mean_lmax` when `reference==beta_sa`)
+- column `1`: distance (`epsilon * (d-1)` in the code above)
+- column `2`: worst lmax found at that distance from the homogeneous optimum (i.e., `max_lmax` when `reference==beta_tilde`)
+- column `3`: mean lmax at that distance from the homogeneous optimum (i.e., `mean_lmax` when `reference==beta_tilde`)
+- column `4`: worst lmax found at that distance from the heterogeneous optimum (i.e., `max_lmax` when `reference==beta_sa`)
+- column `5`: mean lmax at that distance from the heterogeneous optimum (i.e., `mean_lmax` when `reference==beta_sa`)
