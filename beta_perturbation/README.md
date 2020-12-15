@@ -30,7 +30,7 @@ mean_lmax /= samples
 
 ### Data
 
-In the folder corresponding to each power-grid network, the results of the computations are given in `data.mat`. The file contains a single matrix of size `points_per_direction x 5`, where the columns are as follows:
+In the folder corresponding to each power-grid network, the results of the computations are given in the file `data.mat`. The file contains a single matrix of size `points_per_direction x 5`, where the columns are as follows:
 - column `1`: distance (see `epsilon * (d-1)` from above)
 - column `2`: worst lmax around the uniform optimum (i.e., `max_lmax` when `reference==beta_tilde`)
 - column `3`: mean lmax around the uniform optimum (i.e., `mean_lmax` when `reference==beta_tilde`)
