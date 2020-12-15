@@ -17,7 +17,7 @@ This repository includes the output of these scripts as .zip files. Re-running t
 	OUT: `cluster_choice_*.dat` files, `Results_*` folders containing similarity graphs (`graph_*_sim_%d_[%d,%d].png`)
 
 3) Run `RunSelected2nodeClusters.m` to compute the 2D stability landscape as a function of the betas of the symmetrized generators
-	OUT: `Results*/landscape_*_%d_%d.dat` and `Results*/landscape_args_*_%d_%d.dat`
+	IN: `cluster_choice_%s.dat` OUT: `Results*/landscape_*_%d_%d.dat` and `Results*/landscape_args_*_%d_%d.dat`
 
 4) Run `RunClusterZoominInterpolation.m` to compute the precise stability values as the systems are interpolated between
 	original and exact-equitable.
