@@ -30,7 +30,7 @@ while T > 1e-4:
 - `dir()` is a unit-length vector that points to a uniformly random direction in `n`-dimensional space, where `n` is the number of generators.
 See formula at https://mathworld.wolfram.com/HyperspherePointPicking.html
 
-- `random()` is a random number distributed uniformly in [0, 1)
+- `random()` is a random number distributed uniformly in [0, 1).
 
-- `T`. is the temperature parameter	
+- `T` is the temperature parameter.	
 
