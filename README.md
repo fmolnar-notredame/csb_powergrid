@@ -1,5 +1,4 @@
 # Data and code for *Asymmetry underlies stability in power grids*
-### Ferenc Molnar, Takashi Nishikawa, and Adilson E. Motter
 
 This repository contains data and code for reproducing the results described in our upcoming article.
 
