@@ -14,7 +14,7 @@ class Object:
 
 # define systems
 sysnames = ['10gen', '48gen', 'uk', 'germany']
-clusterChoices = [[6,7], [37,38], [8,10], [59,65]]
+clusterChoices = [[6,7], [8,9], [8,10], [3,28]]
 sizes = [10, 48, 66, 69]
 
 def load_data(sysIndex):

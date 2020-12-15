@@ -14,7 +14,7 @@ parallel = false;  % parfor freezes. bad matlab.
 sysname = sysnames{sysIndex};
 
 % selected clusters - hand picked from cluster_choices files
-CC = [6, 7; 19, 44; 6, 10; 17, 25];
+CC = [6, 7; 8, 9; 8, 10; 3, 28];
 C = CC(sysIndex,:);
 
 fname = sprintf('%s_P_orig.dat', sysname);
