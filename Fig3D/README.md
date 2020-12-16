@@ -7,6 +7,7 @@
 - `*.eps`, `*.png`: graphic files for various parts of the figure
 - `test_system_3gen_P.txt`: matrix P for the 3-generator system
 - `betaBD0000.dat`: heterogeneous optimal beta
-- `trace0000.dat`: beta values and stability at points along the green path in Fig. 2a
-- `trace0001.dat`: beta values and stability at points along the blue path in Fig. 2a
-- `trace0002.dat`: beta values and stability at points along the red path in Fig. 2a
+- `trace*.dat`:  beta1, beta2, beta3, and lmax (stability) at points along the paths in Fig. 2a
+   - green path: `trace0000.dat`
+   - blue path: `trace0001.dat`
+   - red path: `trace0002.dat`
