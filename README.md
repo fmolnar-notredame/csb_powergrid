@@ -1,4 +1,4 @@
-# Supporting data and code for "Asymmetry underlies stability in power grids"
+# Code and data for analyzing converse symmetry breaking in power-grid networks
 
 This repository contains data and code for reproducing the results described in our upcoming article.
 
