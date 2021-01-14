@@ -1,4 +1,4 @@
-# Optimized beta for NPCC and German grids on maps
+# Optimized &beta; for NPCC and German grids on maps
 
 ### Folder contents
 
