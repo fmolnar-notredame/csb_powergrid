@@ -11,7 +11,7 @@ With `<your_path>/csb_powergrid/explore_cusps` as the current folder, run `explo
 ```
 explore_cusps(i)
 ```
-where `i` is the index specifying the system:
+where `i` is an index specifying the system:
 
 - `i = 1`: New England test system (10-gen)
 - `i = 2`: NPCC power grid (48-gen)
