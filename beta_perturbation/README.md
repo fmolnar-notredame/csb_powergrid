@@ -1,6 +1,6 @@
 # &beta; perturbation data
 
-This folder contains the results of computing the robustness of stability as a function of perturbations in beta value, for each system in the paper.
+This folder contains the results of computing the robustness of stability as a function of perturbations in &beta; value, for each system in the paper.
 Specifically, the contents of Fig. 4b are provided here.
 
 ### Code
