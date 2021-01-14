@@ -23,7 +23,7 @@ end
 mean_lmax /= samples
 ```
 - `points_per_direction`: number of samples to take along a given direction
-- `samples`: number of random directions to evaluate in n-dimensional &beta; space
+- `samples`: number of random directions to evaluate in `n`-dimensional &beta; space
 - `random_direction(n)`: a random unit vector uniformly distributed over all possible directions in the `n`-dimensional space; see https://mathworld.wolfram.com/HyperspherePointPicking.html
 - `reference`: the original &beta; value to be perturbed (i.e., homogeneous or heterogeneous optimum)
 - `epsilon`: step size along the chosen direction
