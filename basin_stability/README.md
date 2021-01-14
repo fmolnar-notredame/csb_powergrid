@@ -14,8 +14,8 @@ In the subfolder for each power-grid network, we have `dynamics.mat`, containing
 - `Ymag[i,k]`: magnitude of complex admittance between `i` and `k`
 - `Yang[i,k]`: angle of complex admittance between `i` and `k`
 - `delta_star[i]`: steady-state rotor angle
-- `beta_tilde[i]`: homogeneous optimal beta
-- `beta_sa[i]`: heterogeneous optimal beta identified by simulated annealing
+- `beta_tilde[i]`: homogeneous optimal &beta;
+- `beta_sa[i]`: heterogeneous optimal &beta; identified by simulated annealing
 
 Angles are in radians, angular velocities are in radians/second, and all power system parameters are in per unit.
 
