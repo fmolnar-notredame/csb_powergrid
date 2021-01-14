@@ -5,7 +5,7 @@ This folder contains the results of running simulated annealing to find a hetero
 ### Data
 
 The folder for each power-grid network contains:
-- `Original/info.mat`: `P` matrix and original &beta; values, homogeneous optimum &beta;<sub>=</sub>`beta_tilde`, and corresponding &lambda;<sup>max</sup> values
+- `Original/info.mat`: `P` matrix and original &beta; values, homogeneous optimum &beta;<sub>=</sub> (beta_tilde in the code below), and corresponding &lambda;<sup>max</sup> values
 - `Original/samples.mat`: A matrix of 200 rows and `(n+1)` columns where `n` is the number of generators. Each row contains
 one sample of simulated annealing run (see below). The first column is the best achieved &lambda;<sup>max</sup> in that run, and the rest are the corresponding &beta; values.
 - `Stress/level_%2.1f_info.mat`: `P` matrix, &beta;, and &lambda;<sup>max</sup> values for the system at the indicated stress level
