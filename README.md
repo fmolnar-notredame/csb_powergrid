@@ -36,3 +36,5 @@ The folders in this repository contain data and code for reproducing the results
 - **explore_cusps:** Interactive Matlab GUI tool for exploring cusp hypersurfaces (Supplementary Fig. 2)
 
 Please see the README.md file in each folder for further details.
+
+The software in this repository are licensed under GNU GPLv3. Please see LICENSE.txt for details.
