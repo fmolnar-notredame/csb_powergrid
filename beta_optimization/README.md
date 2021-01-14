@@ -1,4 +1,4 @@
-# Beta optimization data
+# &beta; optimization data
 
 This folder contains the results of running simulated annealing to find a heterogeneous &beta; assignment that optimizes the stability &lambda;<sup>max</sup>. The best stability identified for each system is plotted in Fig. 4a of the paper.
 
