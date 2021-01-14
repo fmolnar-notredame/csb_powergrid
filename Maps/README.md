@@ -4,4 +4,4 @@
 
 For each system, the folder contains the following:
 - `*.pdf`: PDF of the visualization on the map
-- `*.csv`: spreadsheet listing for each generator the latitude, longitude, beta value, and MW power output (Pg) 
+- `*.csv`: spreadsheet listing for each generator the latitude, longitude, &beta; value, and MW power output (Pg) 
