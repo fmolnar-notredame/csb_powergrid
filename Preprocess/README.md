@@ -23,8 +23,8 @@ For each system, there is a script `Extract_*.m`, which processes the raw data f
 and then computes the stability and saves the result for a range of stress level:
 - calculates the Effective Network (EN) model
 - linearizes the dynamics around the synchronous state
-- exports the resulting P matrix and the original beta values in the subfolder with the corresponding system name (as `%s/level%04d_P.txt` and `%s/level%04d_b.txt`, respectively)
-- computes and plots the stability for the original beta and for the homogeneous optimal beta
+- exports the resulting P matrix and the original &beta; values in the subfolder with the corresponding system name (as `%s/level%04d_P.txt` and `%s/level%04d_b.txt`, respectively)
+- computes and plots the stability for the original &beta; and for the homogeneous optimal &beta;
 
 For the NPCC and German grids, it also exports the data needed to draw the network on a map.
 
