@@ -5,7 +5,7 @@ Specifically, the contents of Fig. 4b are provided here.
 
 ### Code
 
-The changes of stabililty (lmax) under perturbations of beta are computed using the following algorithm:
+The changes of stabililty &lambda;<sup>max</sup> under perturbations of beta are computed using the following algorithm:
 ```
 mean_lmax = zeros(points_per_direction)
 max_lmax = -inf(points_per_direction)
@@ -32,7 +32,7 @@ mean_lmax /= samples
 
 In the folder corresponding to each power-grid network, the results of the computations are given in the file `data.mat`. The file contains a single matrix of size `points_per_direction x 5`, where the columns are as follows:
 - column `1`: distance (`epsilon * (d-1)` in the code above)
-- column `2`: worst lmax found at that distance from the homogeneous optimum (i.e., `max_lmax` when `reference==beta_tilde`)
-- column `3`: mean lmax at that distance from the homogeneous optimum (i.e., `mean_lmax` when `reference==beta_tilde`)
-- column `4`: worst lmax found at that distance from the heterogeneous optimum (i.e., `max_lmax` when `reference==beta_sa`)
-- column `5`: mean lmax at that distance from the heterogeneous optimum (i.e., `mean_lmax` when `reference==beta_sa`)
+- column `2`: worst &lambda;<sup>max</sup> found at that distance from the homogeneous optimum (i.e., `max_lmax` when `reference==beta_tilde`)
+- column `3`: mean &lambda;<sup>max</sup> at that distance from the homogeneous optimum (i.e., `mean_lmax` when `reference==beta_tilde`)
+- column `4`: worst &lambda;<sup>max</sup> found at that distance from the heterogeneous optimum (i.e., `max_lmax` when `reference==beta_sa`)
+- column `5`: mean &lambda;<sup>max</sup> at that distance from the heterogeneous optimum (i.e., `mean_lmax` when `reference==beta_sa`)
