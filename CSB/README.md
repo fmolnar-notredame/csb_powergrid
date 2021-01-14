@@ -16,7 +16,7 @@ This repository includes the output of these scripts as .zip files. Re-running t
 2) Run `make_similarity_graphs.py` to visualize the input strength patterns for a selection of two-node clusters (chosen according to various measures of similarity).
 	OUT: `cluster_choice_*.dat` files, `Results_*` folders containing similarity graphs (`graph_*_sim_%d_[%d,%d].png`)
 
-3) Run `RunSelected2nodeClusters.m` to compute the 2D stability landscape as a function of the betas for a given choice of two-node cluster using the symmetrized P'.
+3) Run `RunSelected2nodeClusters.m` to compute the 2D stability landscape as a function of the &beta;'s for a given choice of two-node cluster using the symmetrized P'.
 	IN: `cluster_choice_%s.dat` OUT: `Results*/landscape_*_%d_%d.dat` and `Results*/landscape_args_*_%d_%d.dat`
 
 4) Run `RunClusterZoominInterpolation.m` to compute the precise stability values as the systems are interpolated between
