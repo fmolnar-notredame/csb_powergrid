@@ -5,7 +5,7 @@ Specifically, the contents of Fig. 4b are provided here.
 
 ### Code
 
-The changes of stabililty &lambda;<sup>max</sup> under perturbations of beta are computed using the following algorithm:
+The changes of stabililty &lambda;<sup>max</sup> under perturbations of &beta; are computed using the following algorithm:
 ```
 mean_lmax = zeros(points_per_direction)
 max_lmax = -inf(points_per_direction)
@@ -23,9 +23,9 @@ end
 mean_lmax /= samples
 ```
 - `points_per_direction`: number of samples to take along a given direction
-- `samples`: number of random directions to evaluate in n-dimensional beta space
+- `samples`: number of random directions to evaluate in n-dimensional &beta; space
 - `random_direction(n)`: a random unit vector uniformly distributed over all possible directions in the `n`-dimensional space; see https://mathworld.wolfram.com/HyperspherePointPicking.html
-- `reference`: the original beta value to be perturbed (i.e., homogeneous or heterogeneous optimum)
+- `reference`: the original &beta; value to be perturbed (i.e., homogeneous or heterogeneous optimum)
 - `epsilon`: step size along the chosen direction
 
 ### Data
