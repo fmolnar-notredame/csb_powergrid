@@ -1,6 +1,8 @@
 # Code and data for analyzing converse symmetry breaking in power-grid networks
 
-This repository contains data and code for reproducing the results described in our upcoming article in Nature Communications.
+This repository contains data and code for reproducing the results described in our article published in Nature Communications:
+
+**DOI:** 10.1038/s41467-021-21290-5
 
 **Article title:** Asymmetry underlies stability in power grids
 
