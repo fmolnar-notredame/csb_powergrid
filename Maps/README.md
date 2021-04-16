@@ -4,4 +4,4 @@
 
 For each system, the folder contains the following:
 - `*.pdf`: PDF of the visualization on the map
-- `*.csv`: spreadsheet listing for each generator the latitude, longitude, &beta; value, and MW power output (Pg) 
+- `*.csv`: Spreadsheets providing the geographic locations of network nodes. For each bus (node), `*_buses_*.csv` lists the bus number, latitude, longitude, and a list of generators. The other files list only the generator buses, each providing the generator number, latitude, longitude, optimized &beta; value, and MW power output (Pg) for each generator.
